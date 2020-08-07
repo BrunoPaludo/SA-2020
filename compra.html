@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"ref>Menu</a></li>
+                <li><a href="cadastro.html">Área do cliente</a></li>
+            </ul>
+        </nav>
+        <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+ 
+<table border="1">
+   <thead>
+   <tr>
+       <th>Produto</th>
+       <th>Quantidade</th>
+       <th>Preço</th>
+   </tr>
+   </thead>
+ 
+   <tr>
+      <td><input type="text" style="text-align: center;" size="7" id="livro" readonly="readonly"></td>
+      <td><input type="text" style="text-align: center;" size="7" id="quant"></td>
+      <td><input type="text" style="text-align: center;" size="7" id="precoli" readonly="readonly"></td>
+      <td><input type="text" style="text-align: center;" size="7" id="precolivro" readonly="readonly"></td>
+      <td><button id="btnEnviar" onclick="preco()" >Gravar</button></td>
+     
+   </tr>
+   <tr>
+      <td><input type="text" style="text-align: center;" size="7" id="caderno" readonly="readonly"></td>
+      <td><input type="text" style="text-align: center;" size="7" id="quant2"></td>
+      <td><input type="text" style="text-align: center;" size="7" id="precocd" readonly="readonly"></td>
+      <td><input type="text" style="text-align: center;" size="7" id="precocadr" readonly="readonly"></td>
+      <td><button id="btnEnviar" onclick="precocdr()" >Gravar</button></td>
+    
+  </tr>
+  <tr>
+   <td><input type="text" style="text-align: center;" size="7" id="caneta" readonly="readonly"></td>
+   <td><input type="text" style="text-align: center;" size="7" id="quant3"></td>
+   <td><input type="text" style="text-align: center;" size="7" id="precnt" readonly="readonly"></td>
+   <td><input type="text" style="text-align: center;" size="7" id="resultcaneta" readonly="readonly"></td>
+   <td><button id="btnEnviar" onclick="precocaneta()" >Gravar</button></td>
+ 
+</tr>
+   
+</table>
+<br>
+<H3>Selecione o produto</H3>
+<div>
+   <label>Produto:</label>
+   <input type="text" id="prod"/>
+   <label>Quantidade:</label>
+   <input type="text" id="quant"/>
+   <button id="btnEnviar" onclick="preco()" >Gravar</button>
+</div>
+<p id="divResultado">
+</p>
+
+<script>
+  
+  var livro = document.getElementById("livro").value = "Livro";
+   var precoli = parseFloat(document.getElementById("precoli").value="39.00");
+ 
+   var Caderno = document.getElementById("caderno").value = "Caderno";
+   var precocd = parseFloat(document.getElementById("precocd").value="12.50");
+ 
+ 
+   var Caneta = document.getElementById("caneta").value = "Caneta";
+   var precnt = parseFloat(document.getElementById("precnt").value="2.90");
+ 
+ function preco(){
+   
+   var quant = document.getElementById("quant").value;
+    
+  
+   var totalli = document.getElementById("divResultado").value= quant * precoli;
+            
+    
+}
+
+function precocdr(){
+   
+   var quant2 = document.getElementById("quant2").value;
+    
+  
+   var totalli = document.getElementById("precocadr").value= quant * precocd;
+            
+    
+}
+
+function precocaneta(){
+   
+   var quant3 = document.getElementById("quant").value;
+    
+  
+   var totalli = document.getElementById("resultcaneta").value= quant * precnt;
+            
+    
+}
+
+
+
+</script>
+ 
+</body>
+</html>
+</body>
+
+</html>
